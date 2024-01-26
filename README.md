@@ -24,15 +24,6 @@ L'Auto Scaling Group è stato configurato con una policy di Auto Scaling che def
 
 Infine, è stato configurato un processo all'interno delle istanze EC2  nel user data per leggere e processare i messaggi, eliminandoli in modo sicuro.
 
-## Risultati dei Test
-
-I test sono stati condotti per verificare l'efficacia del sistema nelle seguenti fasi:
-
-- **Crescita dinamica:** Il sistema è stato in grado di aggiungere nuove istanze automaticamente in risposta al aumento della coda SQS
-
-- **Decrescita dinamica:** Le istanze non necessarie sono state terminate automaticamente quando il carico di lavoro è diminuito.
-
-- **Gestione dei Messaggi:** Il processo di consumo della coda SQS ha funzionato correttamente nel leggere e processare i messaggi, garantendo l'eliminazione sicura dopo l'elaborazione.
 
 ## Conclusioni
 
